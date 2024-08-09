@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/l\ \(1\));
+}
+@font-face {
+    font-family: best;
+    src: url(../assets/fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+@font-face {
+    font-family: instagram;
+    src: url(../assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+@media (max-width:600px) {
+    #main{
+        padding: 4vw 4vw;
+       
+    }
+    #navbar{
+        min-height: 14vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: instagram;
+    }
+    #navbar i{
+        font-size: 8vw;
+    }
+    #navbar h4{
+        font-size: 6vw;
+        font-weight: 100;
+        letter-spacing: 0.7vw;
+    }
+    #postsec{
+        height: 40vh;
+        width:100%;
+        background-color: #333;
+        margin-top: 25%;
+    }
+    form{
+        height: 100%;
+        width: 100%;
+        padding: 13px;
+        
+
+    }
+    form textarea{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.41);
+        color: white;
+        resize: none;
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        font-size: 6vw;
+        font-family: best;
+    }
+    form input{
+        margin-top: 8vw;
+        margin-left: 38%;
+        padding: 3vw 8vw;
+        border: 0;
+        outline: 0;
+        background-color: #4CB5F9;
+        border-radius: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}

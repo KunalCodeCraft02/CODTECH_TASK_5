@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/l\ \(1\));
+}
+
+@font-face {
+    font-family: best;
+    src: url(../assets/fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+
+@font-face {
+    font-family: instagram;
+    src: url(../assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../assets/fonts/poppins/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: poppins;
+}
+
+@media (max-width:600px) {
+    a{
+        text-decoration: none;
+        color: #4CB5F9;
+    }
+    #main {
+        padding: 3vw 4vw;
+    }
+    .uppertext{
+        min-height: 10vw;
+        width: 100%;
+        /* background-color: red; */
+        text-align: center;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .uppertext i{
+        font-size: 7vw;
+       
+        
+    }
+    .uppertext span{
+        display: flex;
+        align-items: center;
+    }
+
+    .container h3{
+        font-family: instagram;
+
+    }
+    .boxs{
+        min-height: 81vh;
+        width: 100%;
+        /* background-color: #490f0f; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .boxs h3{
+        padding-bottom: 3vw;
+        font-weight: 100;
+        font-size: 10vw;
+    }
+    .box{
+        min-height: 40vh;
+        width: 100%;
+        /* background-color: #333; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 0 2vw;
+    }
+    form input{
+        margin-top: 4vw;
+        padding: 4vw;
+        border: 0;
+        outline: 0;
+        background-color: rgba(128, 128, 128, 0.308);
+        /* border: 1px solid white; */
+        border-radius: 4px;
+        color: white;
+        font-size: 18px;
+       
+    }
+    *::placeholder{
+        font-size: 16px;
+        color: white;
+        opacity: 0.7;
+    }
+    #btn{
+        background-color: #4CB5F9;
+        font-family: poppins;
+        font-weight: 700;
+        letter-spacing: 0.4vw;
+    }
+    .bottom{
+        height: 10vw;
+        width: 100%;
+        text-align: center;
+        /* padding: 0vw; */
+    }
+    .bottom h5{
+        margin-top: 3vw;
+        font-weight: 100;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 5vw;
+       /* flex-direction: column; */
+
+    }
+    .btns button{
+        /* margin-top: 5vw; */
+        background-color: #4CB5F9;
+        font-family: poppins;
+        font-weight: 700;
+        letter-spacing: 0.4vw;
+        border: 0;
+        outline: 0;
+        flex: 1;
+        padding: 4vw 6vw;
+        border-radius: 5px;
+    }
+    #file{
+        width: 80%;
+    }
+    form a{
+        padding-top: 4vw;
+    }
+  
+    
+}

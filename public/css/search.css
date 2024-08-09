@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/l\ \(1\));
+}
+
+@font-face {
+    font-family: best;
+    src: url(../assets/fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+
+@font-face {
+    font-family: instagram;
+    src: url(../assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Roboto;
+}
+
+
+@media (max-width:600px) {
+    #main {
+        padding: 4vw 4vw;
+    }
+
+    #searchbar {
+        min-height: 15vw;
+        /* background-color: #c24141; */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #searchbar #itag {
+        font-size: 7vw;
+       
+    }
+    #searchbar #atag{
+        text-decoration: none;
+        color: white;
+    }
+    
+
+    #searchbar .search {
+        min-height: 10vw;
+        width: 90%;
+        background-color: #333;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 2vw;
+    }
+
+    #reelsec {
+        min-height: 100vh;
+        width: 100%;
+        margin-top: 3vw;
+        margin-left: 5vw;
+
+    }
+
+
+    .box {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+    }
+
+    #reelsec .images {
+        height: 60vw;
+        width: 44%;
+        background-color: #333;
+    }
+    .bottombtns{
+        height: 18vw;
+        position: fixed;
+        background-color: black;
+        z-index: 22;
+        width: 100%;
+        top: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 9vw;
+        gap: 30px;
+    }
+    .bottompic{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .bottombtns img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .message-section{
+       min-height: 150vh;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        z-index: 99;
+        top: -150%;
+        /* top: 0; */
+    }
+    .bottombtns a{
+        text-decoration: none;
+        color: white;
+    }
+
+}

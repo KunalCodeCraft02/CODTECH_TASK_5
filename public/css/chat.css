@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/l\ \(1\));
+}
+@font-face {
+    font-family: best;
+    src: url(../assets/fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+@font-face {
+    font-family: instagram;
+    src: url(../assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Roboto;
+}
+
+@media (max-width:600px) {
+    #navbar{
+        min-height: 15vw;
+        width: 100%;
+        /* background-color: #333; */
+        display: flex;
+        font-family: Roboto;
+        padding: 8vw 5vw;
+        
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+    #navbar i{
+        font-size: 7vw;
+    }
+    #navbar h5{
+        font-size: 19px;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .inputSec{
+        font-family: Roboto;
+        margin-top: 5vw;
+        padding: 0 3vw;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .inputSec a{
+        text-decoration: none;
+    }
+    .input{
+        height: 10vw;
+        width: 75%;
+        background-color: #333;
+        padding: 8px;
+        display: flex;
+        gap: 10px;
+        font-weight: 100;
+        font-size: 5vw;
+        border-radius: 10px;
+    }
+    .input span{
+        opacity: 0.7;
+    }
+    .input i{
+        font-size: 5vw;
+        padding-left: 1vw;
+    }
+    .circleDiv{
+        margin-top: 14vw;
+        /* background-color: red; */
+        display: flex;
+        gap: 30px;
+        padding: 0 6vw;
+        /* position: relative; */
+    }
+    .circle1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+    }
+    .circle{
+        height: 80px;
+        width: 80px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    .note{
+        height: 12vw;
+        width: 18vw;
+        background-color: #333;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 100;
+        position: absolute;
+        top: 25%;
+        left: 3%;
+    }
+    .threebtn{
+        margin-top: 8vw;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    .threebtn button{
+        padding: 2vw 7vw;
+        border-radius: 10px;
+        border: none;
+        outline: 0;
+        background-color: transparent;
+        color: white;
+        font-family: Roboto;
+        border: 2px solid white;
+    }
+    #btn1{
+        background-color: white;
+        color: black;
+    }
+    .chats{
+        min-height: 20vw;
+        width: 100%;
+        padding: 0 3vw;
+        display: flex;
+       
+    }
+    .chatimg{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 17px;
+        padding-top: 9vw;
+        padding-left: 3.2vw;
+    }
+    .chatimg .img{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: red;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 2px;
+    }
+    .text .one{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .text .two{
+        font-size: 14px;
+        opacity: 0.7;
+    }
+    .chatimg i{
+        padding-left: 100px;
+        font-size: 7vw;
+    }
+    .icon a{
+        text-decoration: none;
+        color: white;
+    }
+}

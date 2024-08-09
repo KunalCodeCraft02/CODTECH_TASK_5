@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/l\ \(1\));
+}
+@font-face {
+    font-family: best;
+    src: url(../assets/fonts/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+@font-face {
+    font-family: instagram;
+    src: url(../assets/fonts/BeautifulPeoplePersonalUse-dE0g.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:600px) {
+    
+   
+    #navbar{
+        min-height: 15vw;
+        /* background-color: #333; */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4vw 5vw;
+        position: relative;
+        
+      
+    }
+    #navbar h3{
+        font-family: instagram;
+        letter-spacing: 0.7vw;
+        font-weight: 100;
+        font-size: 8vw;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 8vw;
+    }
+    .icon a{
+        text-decoration: none;
+        color: white;
+    }
+    #navbar h4{
+        position: absolute;
+        /* z-index: 3; */
+        right: 2%;
+        top: 19%;
+        background-color: red;
+        padding: 0.5vw 2vw;
+        border-radius: 50%;
+    }
+    #stories{
+        margin-top: 6vw;
+        margin-left: 3vw;
+        min-height: 30vw;
+        /* background-color: #97c708; */
+        font-family: Roboto;
+        display: flex;
+        overflow: auto;
+        gap: 20px;
+        color: white;
+    }
+    .circle1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .circle1 h5{
+        padding-top: 1.5vw;
+        font-weight: 100;
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        /* background-color: red; */
+        border: 2px solid red;
+        overflow: hidden;
+        
+    }
+    .circle img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .pronav{
+        min-height: 5vh;
+        margin-top: 10vw;
+        /* background-color: #333; */
+        display: flex;
+        align-items: center;
+        padding: 0 4vw;
+        font-family: Roboto;
+        justify-content: space-between;
+    }
+    .pronav i{
+        font-size: 6vw;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .left h4{
+        font-weight: 300;
+    }
+    .left .leftlogo{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .proimg{
+        min-height: 70vh;
+        /* background-color: red; */
+    }
+    .proimage {
+        height: 40vh;
+        width: 100%;
+        background-color: #333;
+        margin-top: 10px;
+        position: relative;
+    }
+    .proimage img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .proimage .it i {
+        font-size: 7vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+        color: white;
+        opacity: 0; /* Ensure it starts hidden */
+        transition: opacity 0.3s ease; /* Add transition for smooth appearance */
+    }
+    .prolikenav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1vw 4vw;
+        font-size: 7vw;
+        margin-top: 2vw;
+    }
+    .righticon{
+        display: flex;
+        gap: 15px;
+    }
+    .captions{
+        font-family: Roboto;
+        font-weight: 300;
+        padding: 1vw 4vw;
+    }
+    .captions p{
+        margin-top: 2vw;
+    }
+    .captions span{
+       padding-top: 3vw;
+    }
+    .bottombtns{
+        height: 18vw;
+        position: fixed;
+        background-color: black;
+        z-index: 22;
+        width: 100%;
+        top: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 9vw;
+        gap: 30px;
+    }
+    .bottompic{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .bottombtns img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .message-section{
+       min-height: 150vh;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        z-index: 99;
+        top: -150%;
+        top: 0;
+    }
+    .bottombtns a{
+        text-decoration: none;
+        color: white;
+    }
+    .seeStory{
+        min-height: 150vh;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: -150%;
+        /* opacity: 0; */
+        z-index: 99;
+        transition: all ease-out 0.3s;
+    }
+    .main{
+        padding: 4vw 5vw;
+    }
+    .goback{
+        min-height: 16vw;
+        /* background-color: #333; */
+        display: flex;
+        align-items: center;
+        font-size: 8vw;
+    }
+    .goback a{
+        text-decoration: none;
+        color: white;
+    }
+    .storyvideo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vw;
+    }
+    .storyv{
+        min-height: 50vh;
+        width: 100%;
+        background-color: #333;
+    }
+    .storyv video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

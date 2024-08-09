@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <h3>
+                <%= usr.username %>
+            </h3>
+            <div class="icons">
+                <i class="ri-at-line"></i>
+                <i class="ri-add-box-line"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div id="profileNav">
+            <div class="profilepic">
+                <img src="<%= usr.profilePic %>" alt="">
+            </div>
+            <div class="pro">
+                <div class="profile-data">
+                    <div class="text1">
+                        38 <br>
+                        Posts
+                    </div>
+
+                    <div class="text2">
+                        3000 <br>
+                        Followers
+                    </div>
+
+                    <div class="text3">
+                        0 <br>
+                        Following
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="biosec">
+            <div class="bio">
+                <h3>
+                    <%= usr.name %>
+                </h3>
+                <p>
+                    <%= usr.bio %>
+                </p>
+            </div>
+            <div class="proDashbord">
+                <h4>Professional dashboard</h4>
+                <p>117K accounts reached in 30 days</p>
+            </div>
+            <div class="editbtnsec">
+                <a href="/edit/<%= usr._id %>"><button>Edit profile</button></a>
+                <button>Share profile</button>
+            </div>
+            <form action="">
+                <div class="highlights">
+                    <div class="circle1">
+                        <div class="circle"></div>
+                        <button>Edit</button>
+                    </div>
+                    <div class="circle1">
+                        <div class="circle"></div>
+                        <button>Edit</button>
+                    </div>
+                    <div class="circle1">
+                        <div class="circle"></div>
+                        <button>Edit</button>
+                    </div>
+                    <div class="circle1">
+                        <div class="circle"></div>
+                        <button>Edit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="postnav">
+            <h4>Posts</h4>
+            <hr>
+        </div>
+        <div class="posts">
+            <% usr.post.reverse().forEach(function(post) { %>
+                <div class="box">
+                    <a id="name" href="">@<%= usr.username %></a>
+                    <p>
+                        <%= post.content %>
+                    </p>
+                    <div class="anchortags">
+                        <a href="">Likes</a>
+                        <a href="/editpost/<%= usr._id %>">Edit</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+    <div class="bottombtns">
+        <a id="atag" href="/"><i class="ri-home-line"></i></a>
+        <a href="/search"><i class="ri-search-line"></i></a>
+        <a href="/sendpost/<%= usr._id %>"><i class="ri-add-box-line"></i></a>
+        <i class="ri-video-line"></i>
+        <div class="bottompic">
+            <a href="/profile"><img src="/images/instadp.png" alt=""></a>
+        </div>
+    </div>
+</body>
+
+</html>

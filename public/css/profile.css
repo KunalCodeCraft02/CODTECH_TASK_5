@@ -1,0 +1,209 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Roboto;
+    background-color: #000;
+    color: white;
+}
+@media (max-width: 600px) {
+    #nav {
+        min-height: 15vw;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3vw;
+    }
+ 
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .icons i {
+        font-size: 8vw;
+    }
+    #profileNav {
+        min-height: 9vw;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 6vw 5vw;
+        /* background-color: #333; */
+        
+    }
+    .profilepic {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .profilepic img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .profile-data {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .biosec{
+       padding: 0 5vw;
+        margin-top: -3vw;
+    }
+    .bio p{
+        width: 80%;
+        font-size: 14px;
+        padding-top: 1vw;
+    }
+    .proDashbord{
+        padding: 2.5vw;
+        margin-top: 4vw;
+        height: 15vw;
+        width: 95%;
+        background-color: #333;
+        border-radius: 10px;
+    }
+    .proDashbord h4{
+        font-weight: 500;
+    }
+    .proDashbord p{
+        font-weight: 100;
+        font-size: 12px;
+    }
+    .editbtnsec{
+        display: flex;
+        padding: 4vw;
+        gap:15px;
+    }
+    .editbtnsec button{
+        padding: 2vw 9vw;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 9px;
+        font-weight: 500;
+    }
+    .highlights{
+        margin-top: 2vw;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .highlights .circle{
+        /* background-color: red; */
+        border: 2px solid #434343;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw; */
+    }
+    .circle1{
+        display: flex;
+        flex-direction: column;
+    }
+    .circle1 button{
+        margin-top: 3vw;
+        padding: 1vw 1vw;
+        border-radius: 1rem;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        color: white;
+    }
+    .bottombtns{
+        height: 18vw;
+        position: fixed;
+        background-color: black;
+        z-index: 22;
+        width: 100%;
+        top: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 9vw;
+        gap: 30px;
+    }
+    .bottompic{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .bottombtns img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .message-section{
+       min-height: 150vh;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        z-index: 99;
+        top: -150%;
+        /* top: 0; */
+    }
+    .bottombtns a{
+        text-decoration: none;
+        color: white;
+    }
+    .postnav{
+        margin-top: 8vw;
+    }
+    .postnav hr{
+        margin-top: 5vw;
+    }
+    .postnav h4{
+        text-align: center;
+    }
+    .posts{
+        min-height: 50vh;
+        width: 100%;
+        padding: 4vw 3vw;
+    }
+    .box{
+        min-height: 19vw;
+        min-width: 50%;
+        /* background-color: red; */
+        padding: 20px;
+        border: 1px solid white;
+        margin-top: 7vw;
+        background-color: rgba(128, 128, 128, 0.314);
+    }
+    #name{
+       color: #4CB5F9;
+    }
+    .box p{
+      padding-top: 8vw;
+      padding-bottom: 5vw;
+    }
+    .box .anchortags{
+        padding-top: 5vw;
+    }
+    .anchortags a{
+        padding-right: 4vw;
+        color: white;
+    }
+   
+}
